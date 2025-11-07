@@ -1,25 +1,23 @@
-<%- include partials/header %>
+<%- include partials/header.ejs %>
 <%- include partials/main_nav.ejs %>
-<div class="row align-items-center g-4">
-  <div class="col-md-4 text-center">
-   <!-- photo of me and intro video -->  
-    <img src="assets/images/profilephoto.png" class="img-fluid rounded-4 shadow-sm" alt="Photo of me">
-  </div>
-  <div class="col-md-8">
-    <h2>About Me</h2>
-    <p class="text-muted">
-      Hi, My name is Sarah Kitchen and I'm a networking and IT security student at Ontario Tech University.
-    </p>
-    
-    <div class="ratio ratio-16x9 mt-3">
-      <video controls poster="assets/images/poster.png">
-        <source src="assets/videos/intro.mp4" type="video/mp4">
-        <source src="assets/videos/intro.ogv" type="video/ogg">
-        Your browser doesn't support the video tag.
-      </video>
+
+<!-- container to center bootstrap card for profile image-->
+<div class="container d-flex justify-content-center my-5">
+
+  <!--bootstrap image card-->
+  <div class="card mb-3" style="max-width: 540px;">
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img src="/Assets/images/profilephoto.png" class="img-fluid rounded-start" alt="Photo of me">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">About Me</h5>
+          <p class="card-text">Hi, My name is Sarah Kitchen and I'm a networking and IT security student at Ontario Tech University.</p>
+        </div>
+      </div>
     </div>
   </div>
-</div>
-
+</div>  
 <%- include partials/bottom_nav.ejs %>
 <%- include partials/footer.ejs %>
