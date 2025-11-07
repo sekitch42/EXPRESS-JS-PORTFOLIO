@@ -1,31 +1,41 @@
 <%- include ./partials/header.ejs %>
 <%- include ./partials/main_nav.ejs %>
+
+<!-- container to center align the contact form -->
+<div class="container my-5">
+  <div class="row justify-content-center">
+    <div class="col-md-8 col-lg-6">
+<!--contact page heading-->
 <h2 class="mb-3">Contact Me</h2>
-<form>
-  <div class="mb-3" action="mailto:youremail@example.com" method="post" enctype="text/plain" name="contact">
-    <label for="name" class="form-label">Name</label>
-    <input type="text" class="form-control" id="name" required maxlength="100">
-  </div>
-  <div class="mb-3">
-    <label for="email" class="form-label">Email</label>
-    <input type="email" class="form-control" id="email" name="email" placeholder="example@example.com" required maxlength="254">
-  </div>
-  <div class="mb-3">
-    <label for="phone" class="form-label">Phone No.</label>
-    <input type="tel" class="form-control" id="phone" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
-  </div>
-  <div class="mb-3">
-    <label for="comments" class="form-label">Comments</label>
-      <textarea class="form-control" id="comments" name="comments" rows="5" maxlength="1000"></textarea>
+      <!--contact page form-->
+      <form>
+        <div class="mb-3">
+          <label for="name" class="form-label">Name</label>
+          <input type="text" class="form-control" id="name" required maxlength="100">
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" class="form-control" id="email" name="email" placeholder="example@example.com" required maxlength="254">
+        </div>
+        <div class="mb-3">
+          <label for="phone" class="form-label">Phone No.</label>
+          <input type="tel" class="form-control" id="phone" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+        </div>
+        <div class="mb-3">
+          <label for="comments" class="form-label">Comments</label>
+            <textarea class="form-control" id="comments" name="comments" rows="5" maxlength="1000"></textarea>
+        </div>
+        <!-- Form buttons for submitting/reseting-->
+        <div class="mb-3">
+          <!-- submit button with icon from fontawesome-->
+          <button type="submit" class="btn btn-primary"><i class="fa-regular fa-paper-plane"></i>Submit</button>
+          <!-- reset button to clear inputs-->
+          <button type="reset" class="btn btn-outline-secondary ms-2">Reset</button>
+        </div>
+      </form>
     </div>
-    <div class="mb-3">
-      <button type="submit" class="btn btn-primary">
-        <i class="fa-regular fa-paper-plane"></i>Submit
-      </button>
-      <button type="reset" class="btn btn-outline-secondary ms-2">Reset</button>
-    </div>
-  </div>
-</form>
+  </div>        
+</div> 
 
 <%- include ./partials/bottom_nav.ejs %>
 <%- include ./partials/footer.ejs %> 
