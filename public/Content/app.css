@@ -1,3 +1,26 @@
 main {
   margin-top: 80px;
 }
+body {
+ font-family: Verdana, Tahoma, sans-serif;
+  color: #ffffff;
+ 
+}
+/* grid and linear gradient background */
+body {
+ 
+  /* grid code adapted from online source, referenced in readme */
+  /* grid lines on top of gradient*/
+  background-image:
+    /* horizontal lines */
+    linear-gradient(0deg, rgba(0,0,0,0.12) 1px, transparent 1px),
+    /* vertical lines */
+    linear-gradient(90deg, rgba(0,0,0,0.12) 1px, transparent 1px),
+    /* base gradient */
+    linear-gradient(180deg, #07130b, #04110a);
+
+  background-size: 60px 60px, 60px 60px, cover;
+  background-repeat: repeat, repeat, no-repeat;
+  background-attachment: fixed;
+  background-position: top left;
+}
