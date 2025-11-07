@@ -24,3 +24,10 @@ body {
   background-attachment: fixed;
   background-position: top left;
 }
+
+.project-card {
+  border-color: #198754;
+  background-color: transparent;
+  color: #198754;
+  padding: 1rem;
+}
