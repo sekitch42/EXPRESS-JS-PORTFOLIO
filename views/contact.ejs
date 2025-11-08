@@ -1,26 +1,33 @@
 <%- include ./partials/header.ejs %>
 <%- include ./partials/main_nav.ejs %>
 
-<!-- container to center align the contact form -->
+<!-- bootstrap container to center align the contact form -->
 <div class="container my-5">
   <div class="row justify-content-center">
     <div class="col-md-8 col-lg-6">
+
 <!--contact page heading-->
 <h2 class="mb-3">Contact Me</h2>
+
       <!--contact page form-->
       <form>
+
+        <!-- name input field -->
         <div class="mb-3">
           <label for="name" class="form-label">Name</label>
           <input type="text" class="form-control" id="name" required maxlength="100">
         </div>
+        <!-- email input field -->
         <div class="mb-3">
           <label for="email" class="form-label">Email</label>
           <input type="email" class="form-control" id="email" name="email" placeholder="example@example.com" required maxlength="254">
         </div>
+        <!-- phone number input field -->
         <div class="mb-3">
           <label for="phone" class="form-label">Phone No.</label>
           <input type="tel" class="form-control" id="phone" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
         </div>
+        <!-- comment field -->
         <div class="mb-3">
           <label for="comments" class="form-label">Comments</label>
             <textarea class="form-control" id="comments" name="comments" rows="5" maxlength="1000"></textarea>

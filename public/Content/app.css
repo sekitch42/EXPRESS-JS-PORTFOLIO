@@ -1,11 +1,15 @@
+/* lowers text from top of the page*/
 main {
   margin-top: 80px;
 }
+
+/*text font styling*/
 body {
  font-family: Verdana, Tahoma, sans-serif;
   color: #ffffff;
  
 }
+
 /* grid and linear gradient background */
 body {
  
@@ -19,12 +23,14 @@ body {
     /* base gradient */
     linear-gradient(180deg, #07130b, #04110a);
 
+  /* makes background cover whole page */
   background-size: 60px 60px, 60px 60px, cover;
   background-repeat: repeat, repeat, no-repeat;
   background-attachment: fixed;
   background-position: top left;
 }
 
+/* adds a green border with a transparent background to project cards */
 .project-card {
   border-color: #198754;
   background-color: transparent;

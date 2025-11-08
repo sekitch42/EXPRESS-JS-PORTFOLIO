@@ -6,10 +6,16 @@
 
   <!--bootstrap image card with green border and transparent background-->
   <div class="card border-success bg-transparent mb-3" style="max-width: 720px;">
+
+  <!-- bootstrap grid system to split card into two columns -->
     <div class="row g-0">
+
+      <!-- left column: profile photo -->
       <div class="col-md-4">
         <img src="/Assets/images/profilephoto.png" class="img-fluid rounded-start" alt="Photo of me">
       </div>
+
+      <!-- right column: text -->
       <div class="col-md-8">
         <div class="card-body text-success">
           <h3 class="card-title">About Me</h3>
@@ -19,5 +25,6 @@
     </div>
   </div>
 </div>  
+
 <%- include ./partials/bottom_nav.ejs %>
 <%- include ./partials/footer.ejs %>
