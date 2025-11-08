@@ -37,3 +37,8 @@ body {
   color: #198754;
   padding: 1rem;
 }
+
+/* removes link underline */
+a {
+  text-decoration: none;
+}
